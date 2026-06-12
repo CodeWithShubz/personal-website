@@ -1,0 +1,72 @@
+/* ---------------------------------------- About Me Page ---------------------------------------- */
+
+@media (max-width: 690px) {
+    .container{
+        padding: 0 23x;
+        /* margin-right: 0; */
+    }
+    .background .container .intro2 {
+        font-size: 25px;
+    }
+    .background .container .btn {
+        font-size: 20px;
+
+    }
+    .background .container .name{
+        font-size: 70px;
+}
+}
+@media (max-width: 500px) {
+    .background .container{
+        padding: 0 0 0 10px;
+        
+    }
+    .background .container .intro1 {
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .background .container .intro2 {
+        font-size: 15px;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+    .background .container .name {
+        align-items: center;
+        font-weight: 400;
+    }
+    .background .container .btn {
+        font-size: 10px;
+        margin-top: 20px;
+        /* margin: 10px; */
+    }
+}
+
+@media (max-width: 947px) {
+    .background .container .name{
+        font-size: 45px;
+    }
+    .background .container .intro1 {
+        font-size: 25px;
+    }
+    .background .container .intro2 {
+        font-size: 35px;
+    }
+    .background .container .btn {
+        font-size: 25px;
+        margin: 10px;
+    }
+    
+}
+
+
+@media (max-width: 500px) {
+    .navbar-brand{
+        margin: auto;
+    }
+    .navbar{
+        text-align: center;
+    }
+    .search-btn{
+        width: 100%;
+    }
+}

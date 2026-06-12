@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(255, 228, 228);
+}
+
+
+.image-new{
+    background: url(../images/banner1.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.third-banner{
+    background: url(../images/banner5.jpg) no-repeat center center;
+}
+
+/* to hide the overflow of carousel's image */
+.carousel { overflow: hidden; }
+.carousel-item { overflow: hidden; }

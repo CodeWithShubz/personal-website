@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    {{>headerlinks}}
+
+    <title>About | CodeWithShubham</title>
+
+    <!-- Import css from root directory -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aboutmobo.css">
+    <link rel="stylesheet" href="css/typewriter.css">
+
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top ubuntu-font  ">
+        <a class="navbar-brand ubuntu-font" href="#">Portfo<span>lio</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Project.html">Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 transparent" type="search" placeholder="Browse Here"
+                    aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0 search-btn" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!----------------------- navBar end ---------------------->
+
+    <!----------------------- Home start ---------------------->
+    <div class="background bg-img d-flex align-items-center">
+        <div class="container text-light ubuntu-font">
+            <h5 class="intro1">Hello, My name is</h5>
+            <h1 class="name">Shubham Tivrekar</h1>
+            <div class="wrapper">
+                <div class="intro2">And I am a</div>
+                <ul class="dynamic-txts">
+                    <li><span>Freelancer</span></li>
+                    <li><span>Designer</span></li>
+                    <li><span>Developer</span></li>
+                    <li><span>Blogger</span></li>
+                </ul>
+            </div>
+
+            <a class="btn btn-primary my-2" href="/contact" role="button">Hire Me</a>
+        </div>
+    </div>
+    <!----------------------- Home End ---------------------->
+
+    <!----------------------- About start ---------------------->
+
+    <div class="container">
+        <div class="text-center">
+            <h1 class="ubuntu-font">About Me</h1>
+            <h5>---Who I am---</h5>
+        </div>
+        <div class="row my-5">
+            <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center">
+                <img class="image-fluid profile rounded d-block" src="images/card-1.jpg" alt="">
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center">
+                <div>
+                    {{!-- <h5 class="poppins-font font-waight-700 my-3">Hii I'm Shubham and I'm a <span></span></h5>
+                    --}}
+                    <div class="wrapper ">
+                        <div class="about-header poppins-font font-waight-700 ">Hii I'm Shubham and I'm a </div>
+                        <ul class="dynamic-txts typing">
+                            <li><span>Freelancer</span></li>
+                            <li><span>Designer</span></li>
+                            <li><span>Developer</span></li>
+                            <li><span>Blogger</span></li>
+                        </ul>
+                    </div>
+                    <p ckass="ubuntu-font font-waight-400 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ei
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sapiente perferendis quod
+                        perspiciatis aperiam laudantium culpa expedita, deserunt est laborum fugiat odit necessitatibus.
+                        s temporibus nisi soluta voluptatibus ex hic expedita mollitia totam aut? Debitis tempore
+                        perferendis commodi expedita mollitia!</p>
+                    <a class="btn btn-danger " href="/contact">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------- About End ---------------------->
+
+    {{>skills}}
+
+    {{>footer}}
+
+    <script>
+        console.log('hii');
+
+
+        ${window}.scroll(function () => {
+            ${'nav'}.toggleClass('red', ${this}.scrollY() > 20);
+        });
+    </script>
+
+    {{>jslinks}}
+
+</body>
+
+</html>

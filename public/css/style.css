@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* Universal selector */
+body{
+    display: flex;
+    flex-direction: column;
+}
+/* Utilitis */
+.span{
+    color: crimson;
+}
+
+.font-weight-700{
+    font-weight: 700 !important
+}
+.font-weight-400 {
+    font-weight: 400 !important
+}
+
+/* fonts  */
+
+.poppins-font{
+    font-family: 'Poppins', sans-serif !important;
+}
+.ubuntu-font{
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+/* Navbar */
+
+.navbar-brand{
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0 25px 0 25px;
+}
+.navbar-brand span{
+    color: crimson;
+}
+.navbar{
+    transition: all 0.3s ease;
+}
+.red{
+    /* padding: 25px 0 i !important; */
+    background: black !important;
+}
+.nav-item{
+    font-size: 20px;
+}
+.transparent{
+        background-color:rgba(0, 0, 0, 0);
+        color:rgb(255, 255, 255);
+        border: 1px solid blueviolet ;
+        outline:none;
+        /* height:30px; */
+        transition:height 1s;
+        -webkit-transition:height 1s;
+}
+.transparent:focus {
+    height:40px;
+    font-size:17px;
+}
+
+
+/* content  */
+.banner{
+    background: url(../images/banner.jpg);
+    height: 100%;
+    border-radius: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-img{
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+/* .container{
+    padding-top: 40px;
+} */
+
+.background .container .intro1 {
+    font-size: 20px;
+}
+
+/* .background .container .intro2 span{
+    color: crimson;
+     font-size: 23px; this line is comment
+    font-weight: 500;
+} */
+
+.background .container .intro2 {
+    font-size: 25px;
+}
+
+.background .container .name{
+    font-weight: 600;
+}
+
+/* About */
+.profile{
+    width: 95%;
+}
+
+
+/* skills section */
+.bars{
+    margin-bottom: 15px;
+}
+.container .row .content .bars .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .row .content .bars .info span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.container .row .content .bars .progress{
+    height: 5px;
+    margin-top: 5px;
+}
+.container .row .left .content .bars .progress-bar{
+    background-color: crimson;
+}
+
+.container .row .left .content .html{
+    width: 90%;
+}
+.container .row .left .content .css{
+    width: 60%;
+}
+.container .row .left .content .js{
+    width: 70%;
+}
+.container .row .left .content .mongo{
+    width: 50%;
+}
+.container .row .left .content .python{
+    width: 60%;
+}
+.container .row .left .content .react{
+    width: 80%;
+}
+
+.container .contact .right-with-text .info-for-contact{
+    margin: 10px 0;
+}
+.container .contact .right-with-text .info-for-contact .icons{
+    display: flex;
+    align-items: center;
+    height: 65px;
+}
+.container .contact .right-with-text .info-for-contact .info{
+    margin-left: 30px;
+}
+.container .contact .right-with-text .info-for-contact .info .head{
+    font-weight: 500;
+}
+.container .contact .right-with-text .info-for-contact .info .head{
+    color: #333;
+}
+.container .contact .right-with-text .info-for-contact .icons i{
+    font-size: 25px;
+    color: crimson;
+}
+.container .contact .left-with-img .boss{
+    width: 9rem;
+}
+
+
+
+
+/* Contact section  */
+.m{
+    margin-top: 50px;
+}
+
+
+.container .contact .row .content{
+    position: relative;
+    
+}
+.container .contact .row .icon{
+    position: absolute;
+    height: 60px;  
+}
+.container .contact .row .detail{
+    position: absolute;
+    left: 5; 
+    top: 10;   
+}
+
+
+
+/* Footer style */
+.footer-width{
+    margin:auto;
+    width: 80%;
+    padding: 12px;
+}
+
+
+
+
+/* media for nav in mobile */
+
+@media (max-width: 988px) {
+    .navbar-collapse{
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 1104px) {
+    /* background .container {
+        margin-left: 0; }*/
+    }
+
+/* @media (max-width: 991px) {
+    .container{
+        margin: 0 50px;
+    }
+} */
+
+
+
+
+

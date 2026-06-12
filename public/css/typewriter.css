@@ -1,0 +1,59 @@
+.wrapper{
+    display: inline-flex;
+}
+.wrapper .static-txt{
+    font-size: 25px; 
+    font-weight: bolder;
+    color: crimson;
+}
+.dynamic-txts{
+    padding-left: 10px;
+    height: 42px;
+    line-height: 39px;
+    overflow: hidden;
+ }
+ .dynamic-txts li{
+    color: #FC6D6D;
+    list-style: none;
+    font-size: 31px;   /* this line edited by me 60px to 70px*/
+    font-weight: 500;
+    position: relative;
+    /* margin-bottom: 5px; */
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+    100%{
+        top: -160px;
+    }
+}
+.dynamic-txts li span{
+    position: relative;
+}
+.typing li span::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 82%;
+    width: 100%;
+    background: #ffffff;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+    40%, 60%{
+        left: calc(100%);
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+
+
+/* -----------------------------About Section------------------------------- */
+
+.about-header{
+    font-size: 25px;
+}

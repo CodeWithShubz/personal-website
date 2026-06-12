@@ -1,0 +1,48 @@
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create an Account</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="/register" method="POST">
+                    <div class="form-group">
+                        <label for="signupModalLabel">Email address</label>
+                        <input type="email" name="email" class="form-control" id="signUpInputEmail"
+                            aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We' ll never share your email with
+                            anyone else.</small>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="signUpInputPassword1">Password</label>
+                        <input type="password" name="password" class="form-control" id="signUpInputPassword1"
+                            placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="signUpInputPassword2">Confirm Password</label>
+                        <input type="password" name="confirmpassword" class="form-control" id="signUpInputPassword2"
+                            placeholder=" Confirm Password">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="notrobot" class="form-check-input" id="signUpCheck1">
+                        <label class="form-check-label" for="signUpCheck1">I am not a Robot</label>
+                    </div>
+                    <button type="button" class="btn btn-primary mt-2"
+                        onclick="alert('Hi, I am Shubham. The registration feature is currently under development. Database integration is in progress. All other website features are fully functional and available for exploration.')">
+                        Sign Up
+                    </button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
